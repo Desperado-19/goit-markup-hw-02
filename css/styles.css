@@ -13,7 +13,9 @@
     /* background */
     --primary-btn-bg-color: #F5F4FA;
     --secondary-btn-bg-color: #2196F3;
+    --hero-btn-active-bg-color: #2196F3;
     --footer-hero-bg-color: #2F303A;
+    --section-team-bg-color: #F5F4FA;;
 
     /* font-family */
     --primary-font: 'Roboto', sans-serif;
@@ -71,6 +73,11 @@ body {
     color: var(--hover-focus-color);
 }
 
+.header-nav-link:hover,
+.header-nav-link:focus {
+    color: var(--hover-focus-color);
+}
+
 .header-contact {
     font-weight: 500;
     font-size: 14px;
@@ -107,6 +114,12 @@ body {
     cursor: pointer;
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+    color: var(--btn-text-color);
+    background: #188CE8;;
+}
+
 .features-title {
     font-weight: 700;
     font-size: 14px;
@@ -114,6 +127,7 @@ body {
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
+
 .features-text {
     font-size: 14px;
     line-height: 1.7;
@@ -127,7 +141,7 @@ body {
 }
 
 .team {
-    background: #F5F4FA;
+    background: var(--section-team-bg-color);
 }
 
 .team-title {
@@ -144,6 +158,34 @@ body {
 }
 
 /* --------------------Main_Portfolio-------------------- */
+.portfolio-btn {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--primary-text-color);
+    background: var(--primary-btn-bg-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    color: var(--btn-text-color);
+    background: var(--secondary-btn-bg-color);
+}
+
+.portfolio-title {
+    font-size: 18px;
+    line-height: 2;
+    color: var(--primary-text-color);
+}
+
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--secondary-text-color);
+}
 
 /* --------------------Footer-------------------- */
 .address-contact {
@@ -169,6 +211,11 @@ body {
     font-size: 14px;
     line-height: 1.7;
     color: var(--footer-text-color);
+}
+
+.footer-address:hover,
+.footer-address:focus {
+    color: var(--hover-focus-color);
 }
 
 .footer-contact {
